@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class UtilityComponent {
 	
 	public String getEncodedString(String plainText) {
-		return Base64.getEncoder().encodeToString(plainText.getBytes());
+		return Base64.getEncoder().encodeToString(plainText.getBytes()) + "_ encoded";
 	}
 
 }
